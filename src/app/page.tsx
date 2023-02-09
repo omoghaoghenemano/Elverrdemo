@@ -1,13 +1,12 @@
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Headers from "component/header/header";
+import Subheader from "component/header/subheader";
 
 export default function Home() {
   return (
     <main>
       {" "}
-      <h1>Hello World</h1>{" "}
+      <Headers />
+      <Subheader />
     </main>
   );
 }
