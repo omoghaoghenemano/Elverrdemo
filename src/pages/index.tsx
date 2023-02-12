@@ -1,10 +1,15 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
 
-const inter = Inter({ subsets: ['latin'] })
-
+import styles from "@/styles/Home.module.css";
+import { Typography } from "@mui/material";
+import Header from "components/header/header";
+import Footer from "components/footer/footer";
+import FooterNotLoggedIn from "components/NotLoggedIn/FooterNotLoggedIn";
+import FAQ from "../../components/FAQ/FAQ";
+import Hire from "components/Hire";
+import Basic from "components/Basic";
+import ReuseableDes from "components/ReuseableDes";
 export default function Home() {
   return (
     <>
@@ -14,110 +19,49 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+      <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
+        <Header />
+        <Typography style={{ color: "green" }}>testing</Typography>
+        <Basic />
+        <ReuseableDes
+          header={"Agency service"}
+          subheader={
+            "By listing your agency role on our website, you can showcase your expertise and connect with job seekers seeking their next career opportunity"
+          }
+          image={
+            "https://res.cloudinary.com/dxsmdvaqq/image/upload/v1676218781/Screenshot_2023-02-12_at_16.18.55_ev3b1i.png"
+          }
+        />
+        <ReuseableDes
+          header={"Freelance service"}
+          subheader={
+            "By listing your job title on our website, you can showcase your expertise and connect with recruiters seeking to give candidate opportunities"
+          }
+          image={
+            "https://res.cloudinary.com/dxsmdvaqq/image/upload/v1676218840/Screenshot_2023-02-12_at_16.20.35_do1h6k.png"
+          }
+        />
+        <Hire />
+        <FAQ
+          firstheader={"What is an IT service?"}
+          firsttitle={
+            "IT services are services related to the use of information technology (IT) to improve business operations, such as data management, networking, software development, and cybersecurity."
+          }
+          secondheader={"What types of IT services do you offer?"}
+          secondtitle={
+            "Our IT services may include data management, networking, software development, cybersecurity, and other services that help businesses improve their operations and productivity."
+          }
+          thirdheader={"What is included in your IT support services"}
+          thirdtitle={
+            "Our IT support services may include help with hardware and software installations, troubleshooting technical issues, providing technical guidance and advice, and assisting with the maintenance and management of your IT systems."
+          }
+          fourthheader={"How do I get started with your IT services"}
+          fourthtitle={
+            "To get started with our IT services, please contact us to discuss your needs and schedule a consultation. Our team will work with you to understand your business and develop a personalized plan to help you improve your operations and productivity."
+          }
+        />
+        <FooterNotLoggedIn />
+      </div>
     </>
-  )
+  );
 }
