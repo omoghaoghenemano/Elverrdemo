@@ -29,7 +29,7 @@ export default function Hire({}: Props) {
               sx={{
                 color: "#FFFFFF",
                 textAlign: "center",
-                fontFamily: "DM Sans",
+
                 fontStyle: "normal",
                 fontWeight: 700,
                 fontSize: "56px",
@@ -42,7 +42,7 @@ export default function Hire({}: Props) {
               sx={{
                 color: "#FFFFFF",
                 textAlign: "center",
-                fontFamily: "DM Sans",
+
                 fontStyle: "normal",
               }}
             >

@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Divider, Typography } from "@mui/material";
 import React from "react";
 import {
   StyledBox,
@@ -27,7 +27,7 @@ function ReuseableDes({ image, header, subheader }: Props) {
               sx={{
                 color: "#FFFFFF",
                 textAlign: "center",
-                fontFamily: "DM Sans",
+
                 fontStyle: "normal",
                 fontWeight: 700,
                 fontSize: "56px",
@@ -40,7 +40,7 @@ function ReuseableDes({ image, header, subheader }: Props) {
               sx={{
                 color: "#FFFFFF",
                 textAlign: "center",
-                fontFamily: "DM Sans",
+
                 fontStyle: "normal",
               }}
             >
