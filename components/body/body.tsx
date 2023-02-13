@@ -13,7 +13,7 @@ type Props = {};
 export default function Body({}: Props) {
   return (
     <StyledBox>
-      <StyleContainer>
+      <StyleContainer sx={{ position: "relative" }}>
         <div
           style={{
             display: "flex",
@@ -173,6 +173,25 @@ export default function Body({}: Props) {
             src={
               "https://res.cloudinary.com/dxsmdvaqq/image/upload/v1676282218/Earth_Illustration_x03bcj.png"
             }
+          />
+        </div>
+        <div
+          style={{
+            background: "#143F1C",
+            height: "100px",
+            width: "100%",
+            marginLeft: "10%",
+            borderRadius: "50%",
+
+            marginTop: "0px",
+
+            filter: "blur(90.6654px)",
+          }}
+        ></div>
+        <div>
+          <img
+            style={{ width: "100%", marginTop: "-100px" }}
+            src="https://res.cloudinary.com/dxsmdvaqq/image/upload/v1676289836/Screenshot_2023-02-13_at_12.03.17_uwlnpk.png"
           />
         </div>
       </StyleContainer>
