@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import React from "react";
 import {
   StyledBox,
@@ -18,6 +18,7 @@ export default function header({}: Props) {
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
+            alignItems: "center",
 
             width: "100%",
           }}
@@ -51,10 +52,22 @@ export default function header({}: Props) {
               display: "flex",
               flexDirection: "row",
               gap: "1rem",
+              alignItems: "center",
             }}
           >
-            <div>English</div>
-            <div>SignIn</div>
+            {/* <div>English</div> */}
+            <Button
+              variant={"contained"}
+              sx={{
+                background: "#FFFFFF",
+                color: "black",
+                width: "79px",
+                height: "35px",
+                textTransform: "none",
+              }}
+            >
+              Sign In
+            </Button>
           </div>
         </div>
       </StyleContainer>
