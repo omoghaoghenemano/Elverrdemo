@@ -91,7 +91,7 @@ export const FooterTypo = styled(Typography)(({ theme }) =>
   theme.unstable_sx({
     "fontSize": "1rem",
     "color": "#F3F3F3",
-    "fontFamily": "DM Sans",
+
     "&:hover": {
       textDecoration: "underline",
       cursor: "pointer",
@@ -104,7 +104,6 @@ export const FooterHeader = styled(Typography)(({ theme }) =>
     fontSize: "1.3rem",
     color: "#FFFFFF",
     fontWeight: "700",
-    fontFamily: "DM Sans",
   })
 );
 export const StyledTextField = styled(TextField)(({ theme }) =>

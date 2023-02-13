@@ -10,6 +10,7 @@ import FAQ from "../../components/FAQ/FAQ";
 import Hire from "components/Hire";
 import Basic from "components/Basic";
 import ReuseableDes from "components/ReuseableDes";
+import Body from "components/body/body";
 export default function Home() {
   return (
     <>
@@ -21,7 +22,7 @@ export default function Home() {
       </Head>
       <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
         <Header />
-        <Typography style={{ color: "green" }}>testing</Typography>
+        <Body />
         <Basic />
         <ReuseableDes
           header={"Agency service"}
